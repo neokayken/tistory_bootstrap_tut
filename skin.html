@@ -30,6 +30,18 @@
         .custom-admin a:hover {
             color: brown;
         }
+        .tt-calendar{
+            margin-top: 0.5em;
+        }
+        .tt-calendar .cal_month {
+            text-align: center;
+        }
+        .tt-calendar thead {
+            border-bottom: 1px solid gray;
+            border-top: 1px solid gray;
+            line-height: 2em;
+            background-color: aliceblue;
+        }
     </style>
 </head>
 
@@ -71,8 +83,6 @@
                 <!-- main s -->
                 <div class="col-xl-9 col-lg-8">
                     <article>
-                        <h4>*메인콘텐츠</h4>
-
                         <!-- 글 그룹 치환자 시작 -->
                         <s_article_rep>
 
@@ -158,7 +168,7 @@
                                 <!-- 프로필 카드 -->
 
                                 <!-- profile card s -->
-                                <div class="card bg-warning text-dark border-danger mb-3">
+                                <div class="card border-secondary mb-3">
                                     <div class="card-header">블로그정보</div>
 
                                     <div class="card-body">
@@ -229,7 +239,7 @@
                                             class="form-control" placeholder="검색어 입력"
                                             onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
 
-                                        <input class="btn btn-outline-primary submit" value="검색" type="button"
+                                        <input class="btn btn-outline-secondary submit" value="검색" type="button"
                                             onclick="[##_search_onclick_submit_##]">
                                     </s_search>
                                 </div>
@@ -268,7 +278,7 @@
                             <!-- 광고-쿠팡 s -->
                             <s_sidebar_element>
                                 <!-- 쿠팡 위젯 -->
-                                <div class="card mb-3">
+                                <div class="card mb-3 border-secondary">
                                     <div class="card-body">
                                         <h5 class="card-title">쿠팡 위젯</h5>
                                         <iframe src="https://coupa.ng/ccvESj" width="100%" height="75" frameborder="0"
@@ -277,6 +287,15 @@
                                 </div>
                             </s_sidebar_element>
                             <!-- 광고-쿠팡 e -->
+
+                            <!-- calendar s -->
+                            <s_sidebar_element>
+                                <!-- 달력 -->
+                                <div class="card mb-3 text-center border-secondary">
+                                    [##_calendar_##]
+                                </div>
+                            </s_sidebar_element>
+                            <!-- calendar e -->
 
                         </s_sidebar>
                     </aside>

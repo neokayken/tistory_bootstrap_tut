@@ -38,15 +38,17 @@
 
         <recentEntries>5</recentEntries>
         <recentComments>5</recentComments>
-        <!-- 트랙백 서비스 중단 -->
-        <recentTrackbacks>5</recentTrackbacks>
+        <recentTrackbacks>5</recentTrackbacks> <!-- 트랙백 서비스 중단 -->
         <itemsOnGuestbook>7</itemsOnGuestbook>
         <tagsInCloud>15</tagsInCloud>
         <sortInCloud>1</sortInCloud>
 
         <expandComment>0</expandComment>
-        <!-- 트랙백 서비스 중단 -->
-        <expandTrackback>0</expandTrackback>
+        <expandTrackback>0</expandTrackback> <!-- 트랙백 서비스 중단 -->
+
+        <lengthOfRecentNotice>15</lengthOfRecentNotice>
+        <lengthOfRecentEntry>15</lengthOfRecentEntry>
+        <lengthOfRecentComment>15</lengthOfRecentComment>
 
 
     </default>
@@ -76,6 +78,11 @@
     expandComment: 댓글 방식 (0:감추기, 1:펼치기)
     expandTrackback: 트랙백 방식 (0:감추기, 1:펼치기)
     - 현재 트랙백 서비스 종료
+
+    lengthOfRecentNotice: 최근 공지사항 글자수
+    lengthOfRecentEntry: 최근 글 글자수
+    lengthOfRecentComment: 최근 댓글 글자수
+    - 이 세가지도 블로그관리 - 사이드바에서 변경가능
 
 
     *- 방명록 그룹 -*
