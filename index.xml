@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+    <!-- 스킨의 기본정보 information -->
+    <!-- 
+        name: 스킨 이름
+        version: 버전
+        description: 스킨 설명
+        license: 저작권 사항
+     -->
+
+    <information>
+        <name>bootstrap5 tistory basic skin</name>
+        <version>0.1</version>
+        <description>
+            <![CDATA[제이쿼리를 제외한 Bootstrap 5 버전을 적용한 스킨.
+            빠른 페이지 로딩과 SEO친화성, 심플함이 특징입니다.]]>
+        </description>
+        <license>
+            <![CDATA[자유로운 수정 가능, 저작권 표시하 재배포 가능]]>
+        </license>
+    </information>
+
+    <!-- 저자 기본정보 author -->
+    <!-- 
+        name: 저자 이름
+        homepage: 웹사이트
+        email: 이메일
+     -->
+
+    <author>
+        <name>코딩각 100°</name>
+        <homepage>https://digiconfactory.tistory.com</homepage>
+        <email>codemasterbbc@hotmail.com</email>
+    </author>
+
+    <!-- 스킨 기본 설정 -->
+    <default>
+
+        <recentEntries>5</recentEntries>
+        <recentComments>5</recentComments>
+        <!-- 트랙백 서비스 중단 -->
+        <recentTrackbacks>5</recentTrackbacks>
+        <itemsOnGuestbook>7</itemsOnGuestbook>
+        <tagsInCloud>15</tagsInCloud>
+        <sortInCloud>1</sortInCloud>
+
+        <expandComment>0</expandComment>
+        <!-- 트랙백 서비스 중단 -->
+        <expandTrackback>0</expandTrackback>
+
+
+    </default>
+
+
+
+</skin>
+
+
+<!-- 스킨 기본 설정 <default> 에 대한 설명 -->
+<!-- 
+    
+    *- 사이드바 그룹 -*
+    
+    [블로그 관리자] - [사이드바]에서 변경가능
+    변경해도 xml 파일은 변경되지 않음
+    index.xml은 default 파일
+
+    recentEntries: 최근글 표시 개수
+    recentComments: 최근 댓글 표시 개수
+    recentTrackbacks: 트랙백 개수
+    - 현재 서비스 종료
+
+    tagsInCloud: 사이드바 태그 개수 (랜덤태그)
+    sortInCloud: 태그 정렬 방식 (1:인기, 2:이름, 3:랜덤)
+
+    expandComment: 댓글 방식 (0:감추기, 1:펼치기)
+    expandTrackback: 트랙백 방식 (0:감추기, 1:펼치기)
+    - 현재 트랙백 서비스 종료
+
+
+    *- 방명록 그룹 -*
+
+    itemsOnGuestbook: 방명록 개수
+
+
+
+
+ -->
