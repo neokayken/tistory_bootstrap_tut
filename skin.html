@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>[##_page_title_##]</title>
+    <!-- 나중에 분리 -->
+    <style>
+        .card img {}
+
+        h1 a {
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        h1 a:hover {
+            color:blueviolet
+        }
+
+        .custom-admin a {
+            text-decoration: none;
+        }
+
+        .custom-admin a:hover {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body id="[##_body_id_##]">
+    <s_t3>
+
+        <!-- 헤더 / navbar start -->
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+            <div class="container">
+                <a href="[##_blog_link_##]" class="navbar-brand">[##_title_##]</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav-menu"
+                    aria-controls="navbarNav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav-menu">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="[##_blog_link_##]">홈</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="[##_taglog_link_##]">태그</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="[##_guestbook_link_##]">방명록</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex m-2">
+                        <input class="form-control me-2" type="text" placeholder="검색" aria-label="Search">
+                        <input value="검색" type="button" class="submit btn btn-outline-dark">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- 헤더 / navbar end -->
+
+        <!-- 임시경계선 -->
+        <hr>
+        <div class="container-lg">
+            <div class="row">
+
+                <!-- main s -->
+                <div class="col-xl-9 col-md-8 border border-primary">
+                    <h4>*메인콘텐츠</h4>
+
+                    <!-- 글 그룹 치환자 시작 -->
+                    <s_article_rep>
+
+                        <h1>
+                            <a href="[##_article_rep_link_##]">
+                                글 제목: [##_article_rep_title_##]
+                            </a>
+                        </h1>
+                        <hr>
+                        <h6 class="text-center">작성자: [##_article_rep_author_##]</h6>
+                        <p class="text-center custom-admin">
+                            <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                            <span>| [##_article_rep_simple_date_##]</span>
+                        </p>
+                        <hr>
+
+
+                        <!-- 글 관리자 영역 -->
+
+                        <s_ad_div>
+                            <div class="container text-center custom-admin">
+                                <a href="[##_s_ad_m_link_##]">수정</a>
+                                | <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a>
+                                | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+                            </div>
+                            <hr>
+                        </s_ad_div>
+
+                        <!-- 글 관리자 끝 -->
+
+                        <!-- 글 본문 시작 -->
+                        <div class="container">
+                            <p>[##_article_rep_desc_##]</p>
+                        </div>
+                        <!-- 글 본문 끝 -->
+
+                        <!-- tag s -->
+                        <s_tag_label>
+                            <hr>
+                            태그 출력
+                            <p>
+                                TAG#: [##_tag_label_rep_##]
+                            </p>
+                        </s_tag_label>
+                        <!-- tag e -->
+
+                        <!-- 카테고리 다른글 s -->
+                        <div class="card">
+                            <div class="card-header">카테고리 다른 글</div>
+                            <ul class="list-group list-group-flush">
+                                <s_article_related>
+                                    <s_article_related_rep>
+                                        <li class="list-group-item d-flex justify-content-between custom-admin">
+                                            <a href="[##_article_related_rep_link_##]">[##_article_related_rep_title_##]
+                                            </a><span>[##_article_related_rep_date_##]</span></li>
+                                            
+                                    </s_article_related_rep>
+                                </s_article_related>
+                            </ul>
+                        </div>
+                        <!-- 카테고리 다른글 e -->
+
+                    </s_article_rep>
+                    <!-- 글 그룹 치환자 끝 -->
+
+
+
+
+                </div>
+                <!-- main e -->
+
+                <!-- 사이드바 시작 -->
+                <div class="col-xl-3 col-md-4 border">
+                    <h2>*사이드바</h2>
+                    <!-- profile card s -->
+                    <div class="card bg-warning text-dark border-danger mb-3">
+                        <div class="card-header">블로그정보</div>
+
+                        <div class="card-body">
+                            <img src="[##_image_##]" alt="profile-image" class="card-img-top">
+                            <hr>
+                            <h5 class="card-title"><b>[##_blogger_##]</b></h5>
+                            <p class="card-text">[##_desc_##]</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary">button</a> 이메일 등 아이콘
+                        </div>
+                        <div class="card-footer text-muted">
+                            footer
+                        </div>
+                    </div>
+                    <!-- profile card e -->
+                    <!-- category s -->
+                    <div class="card border-secondary mb-3">
+                        <div class="card-header">
+                            카테고리
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">item-1</li>
+                            <li class="list-group-item">item-2</li>
+                            <li class="list-group-item">item-3</li>
+                        </ul>
+                        <p>카테고리 치환자로 바꿔야함</p>
+                        <p>[##_category_##]</p>
+                        <p>[##_category_list_##]</p>
+
+                    </div>
+                    <!-- category e -->
+                </div>
+                <!-- 사이드바 끝 -->
+
+            </div>
+        </div>
+
+
+
+        <!-- 임시경계선 -->
+        <hr>
+
+        <!-- footer 시작 -->
+        <footer class="text-center">
+            <h2>footer 영역</h2>
+        </footer>
+
+        <!-- 임시경계선 -->
+        <hr>
+
+
+        <!-- temp container s -->
+        <div class="container-md">
+            <h2>블로그 정보</h2>
+            <p>블로그 제목: [##_title_##]</p>
+            <p>블로그 대표 이미지 url: [##_image_##]</p>
+            <p>블로그 대표 이미지를 포함한 IMG 태그: [##_blog_image_##]</p>
+            <p>블로그 설명: [##_desc_##]</p>
+            <p>블로그 소유자의 필명: [##_blogger_##]</p>
+        </div>
+        <!-- temp container e -->
+
+    </s_t3>
+    <!-- bootstrap 5 js bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
