@@ -143,40 +143,75 @@
 
                 <!-- 사이드바 시작 -->
                 <div class="col-xl-3 col-md-4 border">
-                    <h2>*사이드바</h2>
-                    <!-- profile card s -->
-                    <div class="card bg-warning text-dark border-danger mb-3">
-                        <div class="card-header">블로그정보</div>
+                    <aside>
+                        <s_sidebar>
+                            <s_sidebar_element>
+                                <!-- 프로필 카드 -->
 
-                        <div class="card-body">
-                            <img src="[##_image_##]" alt="profile-image" class="card-img-top">
-                            <hr>
-                            <h5 class="card-title"><b>[##_blogger_##]</b></h5>
-                            <p class="card-text">[##_desc_##]</p>
-                            <hr>
-                            <a href="#" class="btn btn-primary">button</a> 이메일 등 아이콘
-                        </div>
-                        <div class="card-footer text-muted">
-                            footer
-                        </div>
-                    </div>
-                    <!-- profile card e -->
-                    <!-- category s -->
-                    <div class="card border-secondary mb-3">
-                        <div class="card-header">
-                            카테고리
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">item-1</li>
-                            <li class="list-group-item">item-2</li>
-                            <li class="list-group-item">item-3</li>
-                        </ul>
-                        <p>카테고리 치환자로 바꿔야함</p>
-                        <p>[##_category_##]</p>
-                        <p>[##_category_list_##]</p>
+                                <!-- profile card s -->
+                                <div class="card bg-warning text-dark border-danger mb-3">
+                                    <div class="card-header">블로그정보</div>
 
-                    </div>
-                    <!-- category e -->
+                                    <div class="card-body">
+                                        <img src="[##_image_##]" alt="profile-image" class="card-img-top border">
+                                        <hr>
+                                        <h5 class="card-title"><b>[##_blogger_##]</b></h5>
+                                        <p class="card-text">[##_desc_##]</p>
+                                        <hr>
+                                        <a href="#" class="btn btn-primary">button</a> 이메일 등 아이콘
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        footer
+                                    </div>
+                                </div>
+                                <!-- profile card e -->
+                            </s_sidebar_element>
+
+                            <!-- category s -->
+                            <s_sidebar_element>
+                                <!-- 카테고리 -->
+                                <div class="card border-secondary mb-3">
+                                    <div class="card-header">
+                                        카테고리
+                                    </div>
+                                    <p>[##_category_list_##]</p>
+
+                                </div>
+                            </s_sidebar_element>
+                            <!-- category e -->
+
+
+                            <!-- counter s -->
+                            <s_sidebar_element>
+                                <!-- 카운터 -->
+                                <div class="card border-secondary mb-3">
+                                    <div class="card-header">
+                                        카운터
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">► 오늘 : [##_count_today_##] </li>
+                                        <li class="list-group-item">▻ 총계 : [##_count_total_##]</li>
+                                        <li class="list-group-item">▻ 어제 : [##_count_yesterday_##]</li>
+                                    </ul>
+                                </div>
+
+                            </s_sidebar_element>
+                            <!-- counter e -->
+
+                            <!-- counter graph s -->
+                            <s_sidebar_element>
+                                <!-- 카운터 그래프 -->
+                                <div class="card border-secondary mb-3">
+                                    <div class="card-header">
+                                        방문자 그래프
+                                    </div>
+                                    <p>[##_StatisticsGraph_##]</p>
+                                </div>
+                            </s_sidebar_element>
+                            <!-- counter graph e -->
+
+                        </s_sidebar>
+                    </aside>
                 </div>
                 <!-- 사이드바 끝 -->
 
