@@ -72,71 +72,72 @@
 
                 <!-- main s -->
                 <div class="col-xl-9 col-md-8 border border-primary">
-                    <h4>*메인콘텐츠</h4>
+                    <article>
+                        <h4>*메인콘텐츠</h4>
 
-                    <!-- 글 그룹 치환자 시작 -->
-                    <s_article_rep>
+                        <!-- 글 그룹 치환자 시작 -->
+                        <s_article_rep>
 
-                        <h1>
-                            <a href="[##_article_rep_link_##]">
-                                글 제목: [##_article_rep_title_##]
-                            </a>
-                        </h1>
-                        <hr>
-                        <h6 class="text-center">작성자: [##_article_rep_author_##]</h6>
-                        <p class="text-center custom-admin">
-                            <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
-                            <span>| [##_article_rep_simple_date_##]</span>
-                        </p>
-                        <hr>
-
-                        <!-- 글 관리자 영역 -->
-                        <s_ad_div>
-                            <div class="container text-center custom-admin">
-                                <a href="[##_s_ad_m_link_##]">수정</a>
-                                | <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a>
-                                | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
-                            </div>
+                            <h1>
+                                <a href="[##_article_rep_link_##]">
+                                    글 제목: [##_article_rep_title_##]
+                                </a>
+                            </h1>
                             <hr>
-                        </s_ad_div>
-
-                        <!-- 글 관리자 끝 -->
-
-                        <!-- 글 본문 시작 -->
-                        <div class="container">
-                            <p>[##_article_rep_desc_##]</p>
-                        </div>
-                        <!-- 글 본문 끝 -->
-
-                        <!-- tag s -->
-                        <s_tag_label>
-                            <hr>
-                            태그 출력
-                            <p>
-                                TAG#: [##_tag_label_rep_##]
+                            <h6 class="text-center">작성자: [##_article_rep_author_##]</h6>
+                            <p class="text-center custom-admin">
+                                <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                                <span>| [##_article_rep_simple_date_##]</span>
                             </p>
-                        </s_tag_label>
-                        <!-- tag e -->
+                            <hr>
 
-                        <!-- 카테고리 다른글 s -->
-                        <div class="card">
-                            <div class="card-header">카테고리 다른 글</div>
-                            <ul class="list-group list-group-flush">
-                                <s_article_related>
-                                    <s_article_related_rep>
-                                        <li class="list-group-item d-flex justify-content-between custom-admin">
-                                            <a href="[##_article_related_rep_link_##]">[##_article_related_rep_title_##]
-                                            </a><span>[##_article_related_rep_date_##]</span></li>
+                            <!-- 글 관리자 영역 -->
+                            <s_ad_div>
+                                <div class="container text-center custom-admin">
+                                    <a href="[##_s_ad_m_link_##]">수정</a>
+                                    | <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a>
+                                    | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+                                </div>
+                                <hr>
+                            </s_ad_div>
 
-                                    </s_article_related_rep>
-                                </s_article_related>
-                            </ul>
-                        </div>
-                        <!-- 카테고리 다른글 e -->
+                            <!-- 글 관리자 끝 -->
 
-                    </s_article_rep>
-                    <!-- 글 그룹 치환자 끝 -->
+                            <!-- 글 본문 시작 -->
+                            <div class="container">
+                                [##_article_rep_desc_##]
+                            </div>
+                            <!-- 글 본문 끝 -->
 
+                            <!-- tag s -->
+                            <s_tag_label>
+                                <hr>
+                                태그 출력
+                                <p>
+                                    TAG#: [##_tag_label_rep_##]
+                                </p>
+                            </s_tag_label>
+                            <!-- tag e -->
+
+                            <!-- 카테고리 다른글 s -->
+                            <div class="card">
+                                <div class="card-header">카테고리 다른 글</div>
+                                <ul class="list-group list-group-flush">
+                                    <s_article_related>
+                                        <s_article_related_rep>
+                                            <li class="list-group-item d-flex justify-content-between custom-admin">
+                                                <a href="[##_article_related_rep_link_##]">[##_article_related_rep_title_##]
+                                                </a><span>[##_article_related_rep_date_##]</span></li>
+
+                                        </s_article_related_rep>
+                                    </s_article_related>
+                                </ul>
+                            </div>
+                            <!-- 카테고리 다른글 e -->
+
+                        </s_article_rep>
+                        <!-- 글 그룹 치환자 끝 -->
+                    </article>
                 </div>
                 <!-- main e -->
 
