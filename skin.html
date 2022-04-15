@@ -26,10 +26,16 @@
         .custom-admin a {
             text-decoration: none;
         }
-
         .custom-admin a:hover {
             color: brown;
         }
+
+        .custom-input {
+            border-color: grey;
+        }
+
+
+
         .tt-calendar{
             margin-top: 0.5em;
         }
@@ -236,7 +242,7 @@
                                 <div class="input-group mb-3">
                                     <s_search>
                                         <input type="text" name="[##_search_name_##]" value="[##_search_text_##]"
-                                            class="form-control" placeholder="검색어 입력"
+                                            class="form-control custom-input" placeholder="검색어 입력"
                                             onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
 
                                         <input class="btn btn-outline-secondary submit" value="검색" type="button"
