@@ -1,0 +1,39 @@
+.card img {}
+
+h1 a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h1 a:hover {
+    color: blueviolet;
+}
+
+.custom-admin a {
+    text-decoration: none;
+}
+
+.custom-admin a:hover {
+    color: brown;
+    font-weight: 700;
+}
+
+.custom-input {
+    border-color: grey;
+}
+
+.tt-calendar {
+    margin-top: 0.5em;
+}
+
+.tt-calendar .cal_month {
+    text-align: center;
+}
+
+.tt-calendar thead {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    line-height: 2em;
+    background-color: aliceblue;
+}

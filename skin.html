@@ -6,49 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>[##_page_title_##]</title>
-    <!-- 나중에 분리 -->
-    <style>
-        .card img {}
 
-        h1 a {
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-
-        h1 a:hover {
-            color: blueviolet
-        }
-
-        .custom-admin a {
-            text-decoration: none;
-        }
-        .custom-admin a:hover {
-            color: brown;
-        }
-
-        .custom-input {
-            border-color: grey;
-        }
-
-
-
-        .tt-calendar{
-            margin-top: 0.5em;
-        }
-        .tt-calendar .cal_month {
-            text-align: center;
-        }
-        .tt-calendar thead {
-            border-bottom: 1px solid gray;
-            border-top: 1px solid gray;
-            line-height: 2em;
-            background-color: aliceblue;
-        }
-    </style>
 </head>
 
 <body id="[##_body_id_##]">
@@ -94,7 +57,7 @@
 
                             <h1>
                                 <a href="[##_article_rep_link_##]">
-                                    글 제목: [##_article_rep_title_##]
+                                    [##_article_rep_title_##]
                                 </a>
                             </h1>
                             <hr>
@@ -110,7 +73,8 @@
                                 <div class="container text-center custom-admin">
                                     <a href="[##_s_ad_m_link_##]">수정</a>
                                     | <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a>
-                                    | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a>
+                                    | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a> |
+                                    <a href="/manage" target='_blank'>관리</a>
                                 </div>
                                 <hr>
                             </s_ad_div>
@@ -134,7 +98,7 @@
                             <!-- tag e -->
 
                             <!-- 카테고리 다른글 s -->
-                            <div class="card">
+                            <div class="card mb-3">
                                 <div class="card-header">카테고리 다른 글</div>
                                 <ul class="list-group list-group-flush">
                                     <s_article_related>
@@ -148,16 +112,61 @@
                                 </ul>
                             </div>
                             <!-- 카테고리 다른글 e -->
-
                         </s_article_rep>
                         <!-- 글 그룹 치환자 끝 -->
+
+                        <!-- category list, search result s-->
+                        <s_list>
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    "[##_list_conform_##]" 해당 글 [##_list_count_##] 건
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <s_list_rep>
+                                        <!-- li 반복 -->
+                                        <li class="list-group-item d-flex justify-content-between custom-admin">
+
+                                            <!-- 
+                                                <s_list_rep_thumbnail> 
+                                                    리스트 썸네일 사용시 
+                                                </s_list_rep_thumbnail>
+                                            -->
+
+                                            <a href="[##_list_rep_link_##]">
+                                                [##_list_rep_title_##] [##_list_rep_rp_cnt_##]
+                                            </a>
+                                            <span>[##_list_rep_regdate_##]</span>
+                                        </li>
+                                    </s_list_rep>
+                                </ul>
+                            </div>
+                        </s_list>
+                        <!-- category list, search result e-->
+
+                        <!-- 페이징 치환자 (리스트, 글, 방명록 공통) -->
+                        <!-- paging s -->
+                        <s_paging>
+                            <div class="mb-3 text-center">
+                                <a [##_prev_page_##] class="btn btn-outline-primary" role="button">◀ PREV</a>
+
+                                <div class="btn-group">
+                                    <s_paging_rep>
+                                        <a [##_paging_rep_link_##]
+                                            class="btn btn-primary me-1">[##_paging_rep_link_num_##]</a>
+                                    </s_paging_rep>
+                                </div>
+                                <a [##_next_page_##] class="btn btn-outline-primary" role="button">NEXT ▶</a>
+                            </div>
+                        </s_paging>
+                        <!-- paging e -->
+
                     </article>
 
                     <!-- 사이드바 1 시작 -->
                     <s_sidebar>
                         <s_sidebar_element>
                             <!-- 메인 사이드바 요소 -->
-                            <h2>임시</h2>
+                            <h3>사이드바 1</h3>
                         </s_sidebar_element>
                     </s_sidebar>
 
