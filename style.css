@@ -30,6 +30,16 @@ h1 a:hover {
     content: "#";
 }
 
+.custom-footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.custom-footer a:hover{
+    color: yellow;
+    font-weight: 700;
+}
+
 .custom-admin a {
     text-decoration: none;
 }
