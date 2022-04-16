@@ -74,7 +74,8 @@
                                     <a href="[##_s_ad_m_link_##]">수정</a>
                                     | <a href="#" onclick="[##_s_ad_m_onclick_##]">수정(새창)</a>
                                     | <a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a> |
-                                    <a href="/manage" target='_blank'>관리</a>
+                                    <a href="/manage" target='_blank'>관리</a> |
+                                    <a href="/manage/newpost/" target='_blank'>새글</a>
                                 </div>
                                 <hr>
                             </s_ad_div>
@@ -98,7 +99,7 @@
                             <!-- tag e -->
 
                             <!-- 카테고리 다른글 s -->
-                            <div class="card mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-header">카테고리 다른 글</div>
                                 <ul class="list-group list-group-flush">
                                     <s_article_related>
@@ -115,9 +116,39 @@
                         </s_article_rep>
                         <!-- 글 그룹 치환자 끝 -->
 
+
+                        <!-- 페이지 그룹 치환자 s -->
+                        <!-- 
+                            글 치환자로 대체 
+                        -->
+                        <!-- 페이지 그룹 치환자 e -->
+
+
+                        <!-- 공지사항 notice s -->
+                        <s_notice_rep>
+                            <h1>
+                                <a href="[##_notice_rep_link_##]">
+                                    [##_notice_rep_title_##]
+                                </a>
+                            </h1>
+                            <hr>
+                            <h6 class="text-center">관리자: [##_notice_rep_author_##]</h6>
+                            <p class="text-center custom-admin">
+                                <span>작성일: [##_notice_rep_simple_date_##]</span>
+                            </p>
+                            <hr>
+                            <!-- 공지사항 본문 s -->
+                            <div class="container">
+                                [##_notice_rep_desc_##]
+                            </div>
+                            <!-- 공지사항 본문 e -->
+                        </s_notice_rep>
+                        <!-- 공지사항 notice e -->
+
+
                         <!-- category list, search result s-->
                         <s_list>
-                            <div class="card mb-3">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-header">
                                     "[##_list_conform_##]" 해당 글 [##_list_count_##] 건
                                 </div>
@@ -147,18 +178,41 @@
                         <!-- paging s -->
                         <s_paging>
                             <div class="mb-3 text-center">
-                                <a [##_prev_page_##] class="btn btn-outline-primary" role="button">◀ PREV</a>
+                                <a [##_prev_page_##] class="btn btn-outline-primary" role="button">◀</a>
 
                                 <div class="btn-group">
                                     <s_paging_rep>
                                         <a [##_paging_rep_link_##]
-                                            class="btn btn-primary me-1">[##_paging_rep_link_num_##]</a>
+                                            class="btn btn-outline-primary me-1">[##_paging_rep_link_num_##]</a>
                                     </s_paging_rep>
                                 </div>
-                                <a [##_next_page_##] class="btn btn-outline-primary" role="button">NEXT ▶</a>
+                                <a [##_next_page_##] class="btn btn-outline-primary" role="button">▶</a>
                             </div>
                         </s_paging>
                         <!-- paging e -->
+
+                        <!-- 태그 클라우드 치환자 s -->
+                        <s_tag>
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title">태그 클라우드</h5>
+                                    <ul>
+                                        <s_tag_rep>
+                                            <li>
+                                                <a href="[##_tag_link_##]"
+                                                    class="[##_tag_class_##]">[##_tag_name_##]</a>
+                                            </li>
+                                        </s_tag_rep>
+                                    </ul>
+                                </div>
+                            </div>
+                        </s_tag>
+                        <!-- 태그 클라우드 치환자 e -->
+
+
+
+
+
 
                     </article>
 
@@ -183,11 +237,11 @@
                                 <!-- 프로필 카드 -->
 
                                 <!-- profile card s -->
-                                <div class="card border-secondary mb-3">
+                                <div class="card shadow-sm mb-3">
                                     <div class="card-header">블로그정보</div>
 
                                     <div class="card-body">
-                                        <img src="[##_image_##]" alt="profile-image" class="card-img-top border">
+                                        <img src="[##_image_##]" alt="profile-image" class="card-img-top shadow-sm">
                                         <hr>
                                         <h5 class="card-title"><b>[##_blogger_##]</b></h5>
                                         <p class="card-text">[##_desc_##]</p>
@@ -204,7 +258,7 @@
                             <!-- category s -->
                             <s_sidebar_element>
                                 <!-- 카테고리 -->
-                                <div class="card border-secondary mb-3">
+                                <div class="card shadow-sm mb-3">
                                     <div class="card-header">
                                         카테고리
                                     </div>
@@ -218,7 +272,7 @@
                             <!-- counter s -->
                             <s_sidebar_element>
                                 <!-- 카운터 -->
-                                <div class="card border-secondary mb-3">
+                                <div class="card shadow-sm mb-3">
                                     <div class="card-header">
                                         카운터
                                     </div>
@@ -235,7 +289,7 @@
                             <!-- counter graph s -->
                             <s_sidebar_element>
                                 <!-- 카운터 그래프 -->
-                                <div class="card border-secondary mb-3">
+                                <div class="card shadow-sm mb-3">
                                     <div class="card-header">
                                         방문자 그래프
                                     </div>
@@ -248,7 +302,7 @@
                             <!-- search bar s -->
                             <s_sidebar_element>
                                 <!-- 검색창 -->
-                                <div class="input-group mb-3">
+                                <div class="input-group shadow-sm mb-3">
                                     <s_search>
                                         <input type="text" name="[##_search_name_##]" value="[##_search_text_##]"
                                             class="form-control custom-input" placeholder="검색어 입력"
@@ -264,7 +318,7 @@
                             <!-- random tags e -->
                             <s_sidebar_element>
                                 <!-- 랜덤 태그 -->
-                                <div class="accordion mb-3" id="random-tag">
+                                <div class="accordion shadow-sm mb-3" id="random-tag">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingOne">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -293,7 +347,7 @@
                             <!-- 광고-쿠팡 s -->
                             <s_sidebar_element>
                                 <!-- 쿠팡 위젯 -->
-                                <div class="card mb-3 border-secondary">
+                                <div class="card mb-3 shadow-sm">
                                     <div class="card-body">
                                         <h5 class="card-title">쿠팡 위젯</h5>
                                         <iframe src="https://coupa.ng/ccvESj" width="100%" height="75" frameborder="0"
@@ -306,7 +360,7 @@
                             <!-- calendar s -->
                             <s_sidebar_element>
                                 <!-- 달력 -->
-                                <div class="card mb-3 text-center border-secondary">
+                                <div class="card mb-3 text-center shadow-sm ">
                                     [##_calendar_##]
                                 </div>
                             </s_sidebar_element>
