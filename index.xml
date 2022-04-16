@@ -79,7 +79,31 @@
         </tree>
     </default>
     <!-- 스킨 기본 설정 s -->
-    
+
+    <!-- 커버 s -->
+    <cover>
+        <item>
+            <name>cover-text-list</name>
+            <label>
+                <![CDATA[ 텍스트 리스트 기본 ]]>
+            </label>
+            <description>
+                <![CDATA[ 글의 제목만으로 구성한 기본 텍스트 리스트 ]]>
+            </description>
+        </item>
+        <item>
+            <name>cover-thumbnail-basic</name>
+            <label>
+                <![CDATA[ 썸네일 리스트 기본 ]]>
+            </label>
+            <description>
+                <![CDATA[ 썸네일과 제목만으로 구성한 리스트 ]]>
+            </description>
+        </item>
+    </cover>
+    <!-- 커버 e -->
+
+
 </skin>
 
 

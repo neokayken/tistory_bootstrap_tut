@@ -12,9 +12,53 @@ h1 a:hover {
     width: 5rem;
 }
 
-.custom-img img{
+.card-title a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.card-title a:hover {
+    color: brown;
+    font-weight: 700;
+}
+
+.card-body p {
+    font-size: .9rem;
+}
+
+.custom-frame {
+    width: 100%;
+    height: 180px;
+    background-color: blanchedalmond;
+}
+
+.custom-frame img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: 40% 10%;
+    cursor: pointer;
+}
+
+.custom-line-clamp-1 {
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.custom-line-clamp-2 {
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.custom-img img {
     border: 1px solid gray;
-    background-color:floralwhite;
+    background-color: floralwhite;
 }
 
 .custom-tag a {
@@ -30,12 +74,12 @@ h1 a:hover {
     content: "#";
 }
 
-.custom-footer a{
+.custom-footer a {
     text-decoration: none;
     color: aliceblue;
 }
 
-.custom-footer a:hover{
+.custom-footer a:hover {
     color: yellow;
     font-weight: 700;
 }

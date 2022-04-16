@@ -283,7 +283,8 @@
                                         <s_guest_reply_container>
                                             <s_guest_reply_rep>
                                                 <!-- 오류 수정 (삭제 답글) id가 필요 -->
-                                                <div class="card bg-info shadow-sm text-light mb-3" id="[##_guest_rep_id_##]">
+                                                <div class="card bg-info shadow-sm text-light mb-3"
+                                                    id="[##_guest_rep_id_##]">
                                                     <div class="card-body">
                                                         <h5 class="card-title">[##_guest_rep_name_##]</h5>
                                                         <h6 class="card-subtitle text-muted">[##_guest_rep_date_##]
@@ -399,7 +400,61 @@
                         <!-- 태그 클라우드 치환자 e -->
 
 
+                        <!-- 홈커버 cover s -->
+                        <s_cover_group>
+                            홈커버 테스트
+                            <!-- cover repeat s -->
+                            <s_cover_rep>
 
+                                <!-- 기본 썸네일 리스트 -->
+                                <s_cover name='cover-thumbnail-basic'>
+                                    <p>
+                                        개별 커버 타이틀: [##_cover_title_##]
+                                    </p>
+                                    <s_cover_item>
+                                        <s_cover_item_article_info>
+                                            <div class="card mb-3 shadow-sm">
+                                                <div class="row g-0 bg-light">
+                                                    <div class="col-sm-4 col-md-3 col-xxl-2 bg-light">
+                                                        <s_cover_item_thumbnail>
+
+                                                            <div class="custom-frame">
+                                                                <img src="[##_cover_item_thumbnail_##]" alt="thumbnail" class="rounded" onclick="javascript:location.href='[##_cover_item_url_##]';">
+                                                            </div>
+
+                                                        </s_cover_item_thumbnail>
+                                                    </div>
+
+                                                    <div class="col-sm-8 col-md-9 col-xxl-10 align-self-center">
+                                                        <div class="card-body pb-0 pt-1">
+                                                            <h2 class="card-title custom-line-clamp-1">
+                                                                <a href="[##_cover_item_url_##]">
+                                                                    [##_cover_item_title_##]
+                                                                </a></h2>
+                                                            <hr>
+                                                            <p class="card-text custom-line-clamp-2">
+                                                                [##_cover_item_summary_##]</p>
+
+                                                            <p class="text-end custom-admin">
+                                                                <a href="[##_cover_item_category_url_##]">
+                                                                    [##_cover_item_category_##]
+                                                                </a>
+                                                                <span>
+                                                                    | [##_cover_item_simple_date_##]
+                                                                </span>
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </s_cover_item_article_info>
+                                    </s_cover_item>
+                                </s_cover>
+                            </s_cover_rep>
+                            <!-- cover repeat e -->
+                        </s_cover_group>
+                        <!-- 홈커버 cover e -->
 
                     </article>
 
