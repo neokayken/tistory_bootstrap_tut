@@ -8,6 +8,28 @@ h1 a:hover {
     color: blueviolet;
 }
 
+.profile-img img {
+    width: 5rem;
+}
+
+.custom-img img{
+    border: 1px solid gray;
+    background-color:floralwhite;
+}
+
+.custom-tag a {
+    text-decoration: none;
+}
+
+.custom-tag a:hover {
+    color: brown;
+    font-weight: 700;
+}
+
+.custom-tag a::before {
+    content: "#";
+}
+
 .custom-admin a {
     text-decoration: none;
 }

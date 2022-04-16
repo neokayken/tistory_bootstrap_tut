@@ -91,9 +91,8 @@
                             <!-- tag s -->
                             <s_tag_label>
                                 <hr>
-                                태그 출력
-                                <p>
-                                    TAG#: [##_tag_label_rep_##]
+                                <p class="custom-tag">
+                                    TAG: [##_tag_label_rep_##]
                                 </p>
                             </s_tag_label>
                             <!-- tag e -->
@@ -113,8 +112,165 @@
                                 </ul>
                             </div>
                             <!-- 카테고리 다른글 e -->
+
+                            <!-- 댓글 그룹 치환자 s -->
+                            <s_rp>
+                                <!-- 로그인한 댓글 s-->
+                                <div class="card shadow-sm mb-3">
+                                    <div class="card-header">댓글 남기기</div>
+                                    <s_rp_input_form>
+                                        <div class="card-body">
+                                            <!-- 공통 노출 영역 s -->
+                                            <div class="input-group mb-3">
+                                                <textarea name="[##_rp_input_comment_##]" class="form-control"
+                                                    placeholder="댓글을 남겨주세요~" name="[##_guest_textarea_body_##]"
+                                                    rows="2"></textarea>
+                                                <input type="submit" class="btn btn-outline-secondary" value="전송"
+                                                    onclick="[##_rp_onclick_submit_##]" />
+                                            </div>
+                                            <!-- 공통 노출 영역 e -->
+
+                                            <!-- 로그인 X 소유자 X 댓글 s -->
+                                            <s_rp_member>
+                                                <s_rp_guest>
+                                                    <div class="input-group shadow-sm mb-3">
+                                                        <span class="input-group-text">이름</span>
+                                                        <input type="text" name="[##_rp_input_name_##]"
+                                                            class="form-control" value="[##_guest_name_##]">
+                                                        <span class="input-group-text">패스워드</span>
+                                                        <input type="password" class="form-control" maxlength="8"
+                                                            name="[##_rp_input_password_##]"
+                                                            value="[##_rp_admin_check_##]">
+                                                    </div>
+                                                    <div class="input-group shadow-sm mb-3">
+                                                        <span class="input-group-text">홈페이지</span>
+                                                        <input type="text" class="form-control"
+                                                            name="[##_rp_input_homepage_##]"
+                                                            value="[##_guest_homepage_##]">
+                                                    </div>
+                                                </s_rp_guest>
+                                                <div class="form-check d-flex justify-content-end">
+                                                    <input class="form-check-input" type="checkbox" name="[##_rp_input_is_secret_##]" id="secretMsg">
+                                                    <label class="form-check-label" for="secretMsg">&nbsp;비밀글 </label>
+                                                </div>
+                                            </s_rp_member>
+                                            <!-- 로그인 X 소유자 X 댓글 e -->
+
+                                        </div>
+                                    </s_rp_input_form>
+                                </div>
+                                <!-- 로그인한 댓글 e-->
+
+
+                                <!-- 댓글 리스트 s -->
+                                <s_rp_container>
+                                    <s_rp_rep>
+
+                                        <div class="card shadow-sm mb-3">
+                                            <div class="card-header profile-img d-flex justify-content-between">
+                                                <span>
+                                                    <img src="[##_rp_rep_logo_##]" alt="profile image"
+                                                        class="rounded-circle shadow">&nbsp;[##_rp_rep_name_##]
+                                                </span>
+                                                <span class="align-self-center">
+                                                    [##_rp_rep_date_##]
+                                                </span>
+                                            </div>
+                                            <div class="card-body pb-0">
+                                                <p>[##_rp_rep_desc_##]</p>
+                                                <br>
+                                                <p class="d-flex flex-row-reverse justify-content-between">
+                                                    <a href="#" onclick="[##_rp_rep_onclick_reply_##]"
+                                                        class="btn btn-outline-secondary">
+                                                        대댓글쓰기</a>
+
+                                                    <a href="#" onclick="[##_rp_rep_onclick_delete_##]"
+                                                        class="btn btn-outline-secondary">
+                                                        수정/삭제</a>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </s_rp_rep>
+                                </s_rp_container>
+                                <!-- 댓글 리스트 e -->
+                            </s_rp>
+                            <!-- 댓글 그룹 치환자 e -->
+
+
+
                         </s_article_rep>
                         <!-- 글 그룹 치환자 끝 -->
+
+                        <!-- 방명록 guestbook s -->
+                        <s_guest>
+                            <!-- 방명록 그룹치환자 -->
+                            <div class="container">
+                                <s_guest_input_form>
+                                    <!-- 로그인 사용자 -->
+                                    <h3>방명록 남기기</h3>
+                                    <div class="input-group shadow-sm">
+                                        <textarea class="form-control" name="[##_guest_textarea_body_##]"
+                                            rows="5"></textarea>
+                                        <input type="submit" class="btn btn-outline-secondary" value="보내기"
+                                            onclick="[##_guest_onclick_submit_##]" />
+                                    </div>
+
+                                    <!-- 비로그인 사용자 -->
+                                    <s_guest_member>
+                                        <s_guest_form>
+                                            <div class="input-group my-3">
+                                                <input type="text" class="form-control" name="[##_guest_input_name_##]"
+                                                    value="[##_guest_name_##]" placeholder="닉네임 or 이름">
+                                                <span class="input-group-text">패스워드</span>
+                                                <input type="password" maxlength="8" class="form-control"
+                                                    placeholder="password" name="[##_guest_input_password_##]"
+                                                    value="[##_guest_password_##]">
+                                            </div>
+
+                                        </s_guest_form>
+                                    </s_guest_member>
+
+                                </s_guest_input_form>
+                                <hr>
+                                <!-- 방명록 리스트 그룹 (출력) -->
+                                <s_guest_container>
+                                    <s_guest_rep>
+                                        <div class="card bg-light text-dark shadow-sm mb-3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">[##_guest_rep_name_##]</h5>
+                                                <h6 class="card-subtitle text-muted">[##_guest_rep_date_##]</h6>
+                                                <p class="card-text mt-3">[##_guest_rep_desc_##]</p>
+                                                <a href="#" class="card-link"
+                                                    onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+                                                <a href="#" class="card-link"
+                                                    onclick="[##_guest_rep_onclick_reply_##]">답장</a>
+                                            </div>
+                                        </div>
+                                        <!-- 방명록 답글 그룹 -->
+                                        <s_guest_reply_container>
+                                            <s_guest_reply_rep>
+                                                <div class="card bg-info shadow-sm text-light mb-3">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">[##_guest_rep_name_##]</h5>
+                                                        <h6 class="card-subtitle text-muted">[##_guest_rep_date_##]
+                                                        </h6>
+                                                        <p class="card-text mt-3">[##_guest_rep_desc_##]</p>
+                                                        <a href="#" class="card-link"
+                                                            onclick="[##_guest_rep_onclick_delete_##]">수정/삭제</a>
+                                                    </div>
+                                                </div>
+
+
+                                            </s_guest_reply_rep>
+                                        </s_guest_reply_container>
+
+                                    </s_guest_rep>
+                                </s_guest_container>
+                                <hr>
+                            </div>
+                        </s_guest>
+                        <!-- 방명록 guestbook e -->
 
 
                         <!-- 페이지 그룹 치환자 s -->
@@ -193,7 +349,7 @@
 
                         <!-- 태그 클라우드 치환자 s -->
                         <s_tag>
-                            <div class="card shadow-sm">
+                            <div class="card shadow-sm mb-3">
                                 <div class="card-body">
                                     <h5 class="card-title">태그 클라우드</h5>
                                     <ul>
@@ -208,8 +364,6 @@
                             </div>
                         </s_tag>
                         <!-- 태그 클라우드 치환자 e -->
-
-
 
 
 
@@ -234,14 +388,15 @@
                     <aside>
                         <s_sidebar>
                             <s_sidebar_element>
-                                <!-- 프로필 카드 -->
 
+                                <!-- 프로필 카드 -->
                                 <!-- profile card s -->
                                 <div class="card shadow-sm mb-3">
                                     <div class="card-header">블로그정보</div>
 
-                                    <div class="card-body">
-                                        <img src="[##_image_##]" alt="profile-image" class="card-img-top shadow-sm">
+                                    <div class="card-body custom-img">
+                                        <img src="[##_image_##]" alt="profile-image"
+                                            class="card-img-top shadow-sm img-thumbnail">
                                         <hr>
                                         <h5 class="card-title"><b>[##_blogger_##]</b></h5>
                                         <p class="card-text">[##_desc_##]</p>
