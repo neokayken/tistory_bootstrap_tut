@@ -1,4 +1,4 @@
-# tistory_bootstrap_tut
+# Bootstrap 5 Tistory Skin - BBTS Skin
 
 부트스트랩 5를 사용해서 만든
 티스토리 스킨 입니다.
