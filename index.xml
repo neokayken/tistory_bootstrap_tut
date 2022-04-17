@@ -82,6 +82,27 @@
 
     <!-- 커버 s -->
     <cover>
+        <!-- 커버 1 : 썸네일 기본 -->
+        <item>
+            <name>cover-thumbnail-basic</name>
+            <label>
+                <![CDATA[ 썸네일 리스트 기본 ]]>
+            </label>
+            <description>
+                <![CDATA[ 썸네일과 제목, 요약으로 리스트를 구성 ]]>
+            </description>
+        </item>
+        <!-- 커버 2 : 카드 기본  -->
+        <item>
+            <name>cover-card-basic</name>
+            <label>
+                <![CDATA[ 카드 리스트 기본 ]]>
+            </label>
+            <description>
+                <![CDATA[ 부트스트랩 5 카드로 썸네일, 제목 리스트 ]]>
+            </description>
+        </item>
+        <!-- 커버 : 텍스트 리스트 -->
         <item>
             <name>cover-text-list</name>
             <label>
@@ -91,19 +112,20 @@
                 <![CDATA[ 글의 제목만으로 구성한 기본 텍스트 리스트 ]]>
             </description>
         </item>
-        <item>
-            <name>cover-thumbnail-basic</name>
+
+        <!-- 커버 : 테스트용 임시 커버 -->
+                <item>
+            <name>cover-temp-list</name>
             <label>
-                <![CDATA[ 썸네일 리스트 기본 ]]>
+                <![CDATA[ 임시 커버 ]]>
             </label>
             <description>
-                <![CDATA[ 썸네일과 제목만으로 구성한 리스트 ]]>
+                <![CDATA[ 테스트용 임시 커버 ]]>
             </description>
         </item>
+
     </cover>
     <!-- 커버 e -->
-
-
 </skin>
 
 

@@ -14,9 +14,11 @@
     background-size: cover;
 }
 
+/* grid */
+
 .just-frame {
     width: 100%;
-    height: 150px;
+    height: 100%;
     background-color: blanchedalmond;
 }
 
@@ -24,6 +26,6 @@
     width: inherit;
     height: inherit;
     object-fit: cover;
-    object-position: top left;
+    object-position: 50% 10%;
 
 }
