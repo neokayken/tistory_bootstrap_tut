@@ -9,7 +9,7 @@ let spanYear = document.createElement('span');
 let selectedNode = document.getElementById('cr-info');
 let parentNode = document.getElementById('cr-info').parentNode;
 
-spanYear.innerText = 'ⓒ ' + currentDate.getFullYear() + '. ';
+spanYear.innerText = 'ⓒ' + currentDate.getFullYear() + '. ';
 
 parentNode.insertBefore(spanYear, selectedNode);
 
