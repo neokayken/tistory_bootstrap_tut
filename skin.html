@@ -47,10 +47,10 @@
 
         <!-- main container s -->
         <div class="container-lg">
-            <div class="row">
+            <div class="row mb-3">
 
                 <!-- main s -->
-                <div class="col-xl-9 col-md-8 border shadow-sm rounded">
+                <div class="col-xl-9 col-md-8 border shadow-sm rounded pt-3">
                     <article>
                         <!-- 글 그룹 치환자 시작 -->
                         <s_article_rep>
@@ -406,9 +406,9 @@
                             <s_cover_rep>
                                 <!-- 기본 썸네일 리스트 s -->
                                 <s_cover name='cover-thumbnail-basic'>
-                                    <p>
-                                        커버 타이틀: [##_cover_title_##]
-                                    </p>
+
+                                    <!-- <p>커버 타이틀: [##_cover_title_##]</p> -->
+
                                     <s_cover_item>
                                         <s_cover_item_article_info>
                                             <div class="card mb-3 shadow-sm">
@@ -455,9 +455,9 @@
 
                                 <!-- 테스트용 커버 s -->
                                 <s_cover name='cover-temp-list'>
-                                    <p>
-                                        커버 타이틀: [##_cover_title_##]
-                                    </p>
+
+                                    <!-- <p>커버 타이틀: [##_cover_title_##]</p> -->
+                                    
                                     <!-- s_cover_item이 반복 구간 -->
                                     <!-- 그리드 썸네일 커버 s  -->
                                     <div class="container">
@@ -494,16 +494,14 @@
 
                     </article>
 
-                    <!-- 사이드바 1 시작 -->
+                    <!-- 사이드바 1 임시 시작 -->
                     <s_sidebar>
                         <s_sidebar_element>
                             <!-- 메인 사이드바 요소 -->
-                            <h3>사이드바 1</h3>
                         </s_sidebar_element>
                     </s_sidebar>
 
-
-                    <!-- 사이드바 1 끝 -->
+                    <!-- 사이드바 1 임시 끝 -->
                 </div>
                 <!-- main e -->
 
@@ -652,24 +650,18 @@
 
             </div>
 
-            <!-- main container second row s -->
-            <div class="row bg-light">
-                <div class="col border">item-1</div>
-                <div class="col border">item-2</div>
-            </div>
-            <!-- main container second row e -->
         </div>
         <!-- main container e -->
 
 
-
-        <!-- 임시경계선 -->
-        <hr>
-
         <!-- footer 시작 -->
         <footer class="text-start text-light bg-primary mb-3 py-2">
-            <div class="container custom-footer" id="ftContainer">
-                <!-- 스킨 정보 -->
+            <div class="container custom-footer d-flex justify-content-between align-items-center my-1" id="ftContainer">
+                <p class="mb-0">
+                    <!-- 저작권 정보 -->
+                    <a href="[##_blog_link_##]" id="cr-info">[##_title_##]</a>
+                    <span>&nbsp;all rights reserved</span>
+                </p>
             </div>
         </footer>
 

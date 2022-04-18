@@ -126,3 +126,79 @@ h1 a:hover {
     line-height: 2em;
     background-color: aliceblue;
 }
+
+.tt_category {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+.tt_category a {
+    text-decoration: none;
+    color:black;
+    line-height: 1.8;
+}
+.tt_category a:hover {
+    color:brown;
+    background-color: cornsilk;
+    font-weight: 700;
+}
+
+.tt_category>li {
+}
+
+ul .category_list {
+    margin: 0;
+    padding: 0;
+}
+
+.category_list>li {
+    list-style-type: none;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.sub_category_list>li{
+    list-style-type: none;
+}
+
+ul .sub_category_list{
+    margin: 0;
+    padding: 0;
+}
+
+.link_tit{
+    display: block;
+    border-bottom: 1px solid #DFDFDF;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.link_item {
+    display: block;
+    padding-left: 1rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.link_item::before {
+    content: "▷";
+}
+
+.link_sub_item {
+    display: block;
+    padding-left: 2rem;
+}
+
+.link_sub_item::before {
+    content: "-";
+}
+
+footer {
+    font-size: .9rem;
+}
+
+cr-info {
+    display: block;
+}

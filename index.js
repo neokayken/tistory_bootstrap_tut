@@ -2,22 +2,27 @@
 
 /* footer start */
 
+let ftContainer = document.getElementById('ftContainer');
 let currentDate = new Date();
 
-// alert('hello world!');
-
-let ftContainer = document.getElementById('ftContainer');
-
 let spanYear = document.createElement('span');
-spanYear.innerText = 'BBTS 스킨 Copyrightⓒ' + currentDate.getFullYear() + ' by ';
-// BBTS - basic bootstrap tistory skin 
+let selectedNode = document.getElementById('cr-info');
+let parentNode = document.getElementById('cr-info').parentNode;
 
-let codinggakLink = document.createElement('a');
-codinggakLink.innerText = 'CodingGak';
-codinggakLink.href = 'https://digiconfactory.tistory.com';
-codinggakLink.target = '_blank';
+spanYear.innerText = 'ⓒ ' + currentDate.getFullYear() + '. ';
 
-ftContainer.appendChild(spanYear);
-ftContainer.appendChild(codinggakLink);
+parentNode.insertBefore(spanYear, selectedNode);
+
+let skinDesign = document.createElement('span');
+let dLink = document.createElement('a');
+
+// B5T skin -> Bootstrap 5 Tistory skin
+skinDesign.innerText = 'B5T skin by ';
+dLink.innerText = 'CodingGak';
+dLink.href = 'https://digiconfactory.tistory.com';
+dLink.target = '_blank';
+
+skinDesign.appendChild(dLink);
+ftContainer.appendChild(skinDesign);
 
 /* footer end */
